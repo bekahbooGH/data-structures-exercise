@@ -161,7 +161,16 @@ def all_data(filename):
       - list[tuple]: a list of tuples
     """
 
-    all_data = []
+    all_data = [tuple(), tuple(), tuple()]
+    for line in file:
+      line = line.rstrip()
+      words = line.split('|')
+      line
+
+      fullName = words[0] + " " + words[1]
+      houseName = words[2].lower()
+      instructor = words[-2]
+      cohort = words[-1]
 
     # TODO: replace this with your code
 
